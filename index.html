@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-toggle">
+        <button id="toggleButton">☰</button>
+    </div>
+    
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#header">Início</a></li>
+            <li><a href="#education">Educação</a></li>
+            <li><a href="#experience">Experiência Profissional</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#certificados">Certificados</a></li>
+            <li><a href="#form">Fale comigo</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <header id="header">
+            <div class="profile-picture">
+                <img src="img/f3.jpg" alt="Foto de perfil">
+            </div>
+            <h1>Gustavo Henrique</h1>
+            <p>Rua Antônio Scodeler 994 | Pouso Alegre, MG</p>
+            <p>Email: gustavohaa7@gmail.com | Telefone: (35) 99896-9707</p>
+        </header>
+        
+        <section id="education" class="education">
+            <h2>Educação</h2>
+            <div class="item">
+                <h3>Universidade do Vale do Sapucaí</h3>
+                <p>Bacharelado em Sistemas de Informação</p>
+                <p>2022 - 2025</p>
+            </div>
+            <div class="item">
+                <h3>Escola Estadual Dr. José Marques de Oliveira</h3>
+                <p>Ensino Médio</p>
+                <p>2018 - 2020</p>
+            </div>
+        </section>
+        
+        <section id="experience" class="experience">
+            <h1>Experiência Profissional</h1>
+            <h3>Procurando Estágio</h3>
+        </section>
+        
+        <section id="skills" class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desenvolvimento em Java</li>
+                <li>Conceitos SOLID</li>
+                <li>Gerenciamento de Projetos</li>
+                <li>Comunicação Eficaz</li>
+                <li>Inglês Intermediário</li>
+            </ul>
+        </section>
+
+        <section id="certificados" class="certificado-img">
+            <h1>Certificados</h1>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3ae404c4-9902-4481-bb2d-62cfb73c69ed" data-share-badge-host="https://www.credly.com">              
+            </div>
+            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        </section>
+
+
+        <section>
+            <h1 class="h1-form">Fale comigo</h1>
+
+            <form id="form">
+                <label for="name">Nome: </label>
+                <input type="text" id="name">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message"></textarea>
+
+                <button type="submit" onclick="imprimir()">Enviar</button>
+            </form>
+        </section>
+
+        <footer id="footer" class="footer">
+            <p>© 2023 Gustavo Henrique. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
